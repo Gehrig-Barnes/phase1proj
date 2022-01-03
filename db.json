@@ -1,0 +1,22 @@
+{
+    "resturants": [
+        {
+            "id": 1,
+            "name": "Pats",
+            "rating": 5,
+            "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+            "comment": 100,
+            "phoneNumber": "555-555-555",
+            "address": "xoxox"
+        },
+        {
+            "id": 1,
+            "name": "Ginos",
+            "rating": 5,
+            "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+            "comment": 100,
+            "phoneNumber": "555-555-555",
+            "address": "xoxox"
+        }
+    ]
+}
