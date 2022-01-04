@@ -6,9 +6,9 @@
             "logo": "https://www.phillymag.com/wp-content/uploads/sites/3/2015/02/genos-steaks-400.jpg",
             "like": 10,
             "dislike": 4,
-            "total": 14,
+            "total": "",
             "image": "https://andreasrecipes.com/wp-content/uploads/2010/02/Cheesesteak_throwdown3-2.jpg",
-            "comment": "",
+            "comment": [],
             "phoneNumber": "((215) 389-0659",
             "address": "1219 S 9th St, Philadelphia, PA 19147"
         },
@@ -18,11 +18,77 @@
             "logo": "https://images.squarespace-cdn.com/content/v1/5b05c01a45776e6aaf4589aa/1529700410509-XLEJS96LUESRWCD0V6UU/023steaks_021816.jpg?format=1500w",
             "likes": 30,
             "dislikes": 9,
-            "total": 39,
+            "total": "39",
             "image": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pat-s-King-of-Steaks-Philly-Cheese-Steak_exps150749_CW2376963B12_20_7bC_RMS.jpg",
-            "comment": 100,
+            "comment": [],
             "phoneNumber": "(215) 468-1546",
             "address": "1237 E Passyunk Ave, Philadelphia, PA 19147"
+        },
+        {   "id": 3,
+            "name": "Dalessandro's Steaks",
+            "logo": "https://b.zmtcdn.com/data/reviews_photos/c63/ff5dc625ed4befb7a10ae89f0dd51c63_1457997203.jpg",
+            "likes": 9,
+            "dislikes": 5,
+            "total": 0,
+            "image":"https://s3-media0.fl.yelpcdn.com/bphoto/MRvZIW_CBbrm2Dhbuk6U3Q/l.jpg" ,
+            "comment": [],
+            "phoneNumber": "(215) 482-5407",
+            "address": "600 Wendover St, Philadelphia, PA 19128"
+
+        },
+        {
+            "id": 4,
+            "name": "Chubby's Steaks",
+            "logo": "http://chubbyscheesesteaks.com/wp-content/uploads/2014/08/logocopyretina.png",
+            "likes": 9,
+            "dislikes": 5,
+            "total": 0,
+            "image": "https://static.wixstatic.com/media/228b35_b8d6f474d4c547de912b8a31ccfaa2ec~mv2.jpg/v1/fill/w_544,h_602,al_c,q_80,usm_0.66_1.00_0.01/228b35_b8d6f474d4c547de912b8a31ccfaa2ec~mv2.webp",
+            "comment": [],
+            "phoneNumber": "(215) 487-2575",
+            "address": "5826 Henry Ave, Philadelphia, PA 19128"
+
+            
+        },
+        {
+            "id": 5,
+            "name": "Max's Steaks",
+            "logo": "https://www.maxssteaksshakesandfries.com/uploads/b/729715c0-7f5c-11ea-9afa-63854c531e38/logo.jpg",
+            "likes": 9,
+            "dislikes": 5,
+            "total": 0,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Maxs_cheesesteak.jpg/220px-Maxs_cheesesteak.jpg",
+            "comment": [],
+            "phoneNumber": "(215) 229-9048",
+            "address": "3653 Germantown Ave, Philadelphia, PA 19140"
+        },
+        {
+            "id": 6,
+            "name": "Shizz's Steaks and Hoagies",
+            "logo": "https://mainsite-prod-cdn.azureedge.net/partner-images/395781/mainlogo_logo.jpg",
+            "likes": 9,
+            "dislikes": 5,
+            "total": 0,
+            "image": "https://d1ralsognjng37.cloudfront.net/f076a808-e9a3-4964-b4ef-716aa9bff4a6.jpeg",
+            "comment": [],
+            "phoneNumber": "(267) 761-5529",
+            "address": "2550 W Glenwood Ave, Philadelphia, PA 19121"
+
+            
+        },
+        {
+            "id": 7,
+            "name": "Explorers Den",
+            "logo": "https://static1.squarespace.com/static/57ec1ab0c534a577bb322529/t/57ec1b3c46c3c44afc763960/1618359184708/",
+            "likes": 9,
+            "dislikes": 5,
+            "total": 0,
+            "image": "https://images.squarespace-cdn.com/content/v1/57ec1ab0c534a577bb322529/1476371920890-4OBI0LFHZHB90AY8L82H/image-asset.jpeg?format=1500w",
+            "comment": [],
+            "phoneNumber": "(215) 621-6572",
+            "address": "2160 W Olney Ave, Philadelphia, PA 19144"
         }
+
+
     ]
 }
