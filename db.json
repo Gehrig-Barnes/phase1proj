@@ -2,21 +2,27 @@
     "resturants": [
         {
             "id": 1,
-            "name": "Pats",
-            "rating": 5,
-            "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
-            "comment": 100,
-            "phoneNumber": "555-555-555",
-            "address": "xoxox"
+            "name": "Geno's Steaks",
+            "logo": "https://www.phillymag.com/wp-content/uploads/sites/3/2015/02/genos-steaks-400.jpg",
+            "like": 10,
+            "dislike": 4,
+            "total": 14,
+            "image": "https://andreasrecipes.com/wp-content/uploads/2010/02/Cheesesteak_throwdown3-2.jpg",
+            "comment": "",
+            "phoneNumber": "((215) 389-0659",
+            "address": "1219 S 9th St, Philadelphia, PA 19147"
         },
         {
-            "id": 1,
-            "name": "Ginos",
-            "rating": 5,
-            "image": "http://www.pngmart.com/files/3/Toy-Story-Woody-PNG-Photos.png",
+            "id": 2,
+            "name": "Pat's King Of Steaks",
+            "logo": "https://images.squarespace-cdn.com/content/v1/5b05c01a45776e6aaf4589aa/1529700410509-XLEJS96LUESRWCD0V6UU/023steaks_021816.jpg?format=1500w",
+            "likes": 30,
+            "dislikes": 9,
+            "total": 39,
+            "image": "https://tmbidigitalassetsazure.blob.core.windows.net/rms3-prod/attachments/37/1200x1200/Pat-s-King-of-Steaks-Philly-Cheese-Steak_exps150749_CW2376963B12_20_7bC_RMS.jpg",
             "comment": 100,
-            "phoneNumber": "555-555-555",
-            "address": "xoxox"
+            "phoneNumber": "(215) 468-1546",
+            "address": "1237 E Passyunk Ave, Philadelphia, PA 19147"
         }
     ]
 }
