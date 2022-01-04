@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
   }
 
   header {
@@ -32,4 +31,32 @@
     display: flex;
     overflow-x: auto;
     max-block-size: 150px;
+}
+
+#fooddetails {
+    position: relative;
+  }
+
+.detailimg {
+    height: 350px;
+    float: left;
+}
+.name,
+.address,
+.phone {
+    position: absolute;
+    left: 30px;
+    padding: 0.25rem 5rem 0.25rem 1rem;
+    background-color: brown;
+}
+
+.name {
+    bottom: 80px;
+  }
+
+.address {
+    bottom: 50px;
+}
+.phone {
+    bottom: 20px;
 }
