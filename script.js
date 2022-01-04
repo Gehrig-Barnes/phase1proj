@@ -1,7 +1,7 @@
 function resturantData () {
     fetch("http://localhost:3000/resturants")
     .then (res => res.json())
-    .then (data => data.forEach(renderSteaks))
+    .then (data =>{ data.forEach(renderSteaks)})
 }
 
 function renderSteaks (steaks) {
@@ -10,5 +10,6 @@ function renderSteaks (steaks) {
     logoImage.setAttribute('src', `${steaks.logo}`)
     resturants.appendChild(logoImage)
 }
+
 
 resturantData();
