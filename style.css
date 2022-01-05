@@ -43,20 +43,41 @@
 }
 .name,
 .address,
-.phone {
+.phone,
+.percentage {
     position: absolute;
-    left: 30px;
     padding: 0.25rem 5rem 0.25rem 1rem;
-    background-color: brown;
+    left: 10px;
 }
 
 .name {
-    bottom: 80px;
+    top: 5%;
+    right: 10px;
   }
 
 .address {
-    bottom: 50px;
+    top: 15%;
+    right: 10px;
 }
 .phone {
-    bottom: 20px;
+    top: 22%;
+    right: 10px;
+}
+
+.percentage {
+  top: 30%;
+  right: 10px;
+}
+
+.button {
+  float:left;
+  padding: 10px;
+  border-radius: 10px;
+  width: 20%;
+  
+}
+
+.detailimg {
+  width: 400px;
+  height: 400px;
 }
