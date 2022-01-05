@@ -74,7 +74,7 @@
   padding: 10px;
   width: 100px;
   height:100px;
-  
+  filter: drop-shadow(2px 2px 5px rgb(0 0 0 / 0.5));
 }
 
 .detailimg {
@@ -99,6 +99,10 @@
     padding: 50px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+}
+.detailimg {
+  width: 400px;
+  height: 400px;
 }
 
 
