@@ -82,3 +82,24 @@
   height: 400px;
 }
 
+.form-detail {
+  position: absolute;
+  margin: 1rem 0;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  left: 550px;
+  bottom: 70px
+  
+}
+
+  textarea[type=texts] {
+    width: 100%;
+    padding: 50px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+
