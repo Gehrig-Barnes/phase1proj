@@ -107,3 +107,12 @@
 
 
 
+.comment-section {
+  position: relative;
+  text-align: left;
+  left: 30%;
+}
+
+.comment-section h2 {
+  margin-top: 30px;
+}
