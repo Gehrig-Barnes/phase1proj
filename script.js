@@ -18,6 +18,9 @@ function renderSteaks (obj) {
         const address = document.querySelector('.address')
         const phoneNumber = document.querySelector('.phone')
         const percentage = document.querySelector('#percentage')
+        // const comment = document.querySelector("#commentSub")
+        // comment.textContent = (obj.comment)
+ 
         name.textContent = obj.name
         img.src = obj.image
         address.innerText = obj.address
@@ -26,6 +29,7 @@ function renderSteaks (obj) {
         percentage.innerText = `Percentage of people who like this: ${Math.floor(parseFloat(percentageNumber))}%`
     })
 }
+
 function totalLikes(obj){
     obj.total = obj.likes + obj.dislikes
     obj.likesPercentage = obj.likes*100/obj.total
@@ -70,4 +74,22 @@ function likeAndDislikeButton(array){
         }
     })
 }
+
+
+function submitComment () {
+    let form = document.querySelector("form")
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+
+        const newcomment = document.querySelector("#commentSub")
+        const comment = e.target.newcomment.value
+        const name = e.target.newname.value
+        newcomment.textContent = `${name}:  `+ comment
+
+
+    })
+}
+
+submitComment();
+
 resturantData();
