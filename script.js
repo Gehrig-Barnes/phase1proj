@@ -18,8 +18,8 @@ function renderSteaks (obj) {
         const address = document.querySelector('.address')
         const phoneNumber = document.querySelector('.phone')
         const percentage = document.querySelector('#percentage')
-        // const comment = document.querySelector("#commentSub")
-        // comment.textContent = (obj.comment)
+        const comment = document.querySelector("#commentSub")
+        comment.textContent = obj.comment
  
         name.textContent = obj.name
         img.src = obj.image
