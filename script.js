@@ -4,8 +4,10 @@ function resturantData () {
     .then (data =>{
         data.forEach(renderSteaks)
         likeAndDislikeButton(data)
+        submitComment(data)
     })
 }
+
 function renderSteaks (obj) {
     const resturants = document.querySelector("#logo")
     const logoImage = document.createElement('img')
@@ -18,8 +20,11 @@ function renderSteaks (obj) {
         const address = document.querySelector('.address')
         const phoneNumber = document.querySelector('.phone')
         const percentage = document.querySelector('#percentage')
-        const comment = document.querySelector("#commentSub")
-        comment.textContent = obj.comment
+        const commentSection = document.querySelector('#comments-list')
+        commentSection.innerHTML= ''
+        
+        
+        
  
         name.textContent = obj.name
         img.src = obj.image
@@ -27,6 +32,8 @@ function renderSteaks (obj) {
         phoneNumber.innerText = obj.phoneNumber
         let percentageNumber = obj.likesPercentage
         percentage.innerText = `Percentage of people who like this: ${Math.floor(parseFloat(percentageNumber))}%`
+        obj.comment.forEach(displayComment)
+        
     })
 }
 
@@ -76,20 +83,37 @@ function likeAndDislikeButton(array){
 }
 
 
-function submitComment () {
-    let form = document.querySelector("form")
+function submitComment (array) {
+    const form = document.querySelector("form")
+    const foodName =document.querySelector('.name')
     form.addEventListener('submit', e => {
         e.preventDefault();
-
-        const newcomment = document.querySelector("#commentSub")
+        for(item of array){
+            if(foodName.innerText === item.name){
         const comment = e.target.newcomment.value
         const name = e.target.newname.value
-        newcomment.textContent = `${name}:  `+ comment
+        const newcomment = `${name}: ${comment}`
+        item.comment.push(newcomment)
+        console.log(item)
+        }
+    }
+    
+    
+        
 
 
     })
 }
+function displayComment(array){
+    const commentSection = document.querySelector('#comments-list')
+    console.log(array)
+    const indivisualComment = document.createElement('li')
+    indivisualComment.innerText = array
+    commentSection.appendChild(indivisualComment)
 
-submitComment();
+}
+
+
+
 
 resturantData();
