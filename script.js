@@ -21,7 +21,7 @@ function renderSteaks (obj) {
         const phoneNumber = document.querySelector('.phone')
         const percentage = document.querySelector('#percentage')
         const commentSection = document.querySelector('#comments-list')
-        commentSection.innerHTML= ''
+        commentSection.textContent = obj.comment
         
         
         
@@ -31,7 +31,7 @@ function renderSteaks (obj) {
         address.innerText = obj.address
         phoneNumber.innerText = obj.phoneNumber
         let percentageNumber = obj.likesPercentage
-        percentage.innerText = `Percentage of people who like this: ${Math.floor(parseFloat(percentageNumber))}%`
+        percentage.innerText = ` ${Math.floor(parseFloat(percentageNumber))}% Liked!`
         obj.comment.forEach(displayComment)
         
     })
@@ -91,10 +91,12 @@ function submitComment (array) {
         for(item of array){
             if(foodName.innerText === item.name){
         const comment = e.target.newcomment.value
-        const name = e.target.newname.value
-        const newcomment = `${name}: ${comment}`
-        item.comment.push(newcomment)
-        console.log(item)
+        let name = e.target.newname.value
+        const newComment = `${name}: ${comment}`
+        item.comment.push(newComment)
+        displayComment(newComment)
+        form.reset();
+        
         }
     }
     

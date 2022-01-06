@@ -21,10 +21,19 @@
       </p>
 
 
+
     </div>
-    <div>
-      <h2 id = 'comment header'>Comments</h2>
-      <ol id = 'comments-list'></ol>
+    <div class="flex-container">
+      <div class="left">
+        <input id="like-button" class="button" type="image" src="https://freesvg.org/img/Thumbs-Up-Silhouette.png" />
+      </div>
+      <div class="right">
+        <input id="dislike-button" class="button" type="image" src="https://static.thenounproject.com/png/243847-200.png" />
+      </div> 
+    </div>
+    <div id="allcomments">
+      <h2 id = 'commentheader'>Comments</h2>
+      <ul id = 'comments-list'></ul>
     </div>
     <form class="form-detail">
       <label for="comment">comment: </label>
@@ -33,14 +42,7 @@
       <input type="text" name="name" id="newname"/>
       <input type="submit" value="Post" />
     </form>
-    <div class="flex-container">
-      <div class="left">
-        <input id="like-button" class="button" type="image" src="https://freesvg.org/img/Thumbs-Up-Silhouette.png" />
-      </div>
-      <div class="right">
-        <input id="dislike-button" class="button" type="image" src="https://static.thenounproject.com/png/243847-200.png" />
-      </div>
-    </div>
+
     <div>
       <h2 id="commentSub"></h2>
     </div>

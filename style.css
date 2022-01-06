@@ -7,10 +7,12 @@
   body {
     padding: 1rem;
     text-align: center;
-    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(238,142,142,0.0802696078431373) 0%, rgba(255,87,0,0.9514180672268907) 0%, rgba(210,46,42,0.4192051820728291) 100%);
   }
 
   header {
@@ -19,22 +21,33 @@
   color: black;
   font-size: 35px;
   text-decoration: underline;
+  font-family: cursive;
+  background: rgb(2,0,36);
+  border-style:double;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(205,200,55,0.0802696078431373) 0%, rgba(210,46,42,0.4192051820728291) 100%, rgba(0,212,255,1) 100%);
 }
 #logo {
     display: flex;
     overflow-x: auto;
     margin: 1rem 0;
     max-width: calc(100vw - 2rem);
+    border-image: fill;
+    
   }
 
 #logo img {
     display: flex;
     overflow-x: auto;
     max-block-size: 150px;
+    border-radius: 100%;
+    
+    cursor: pointer;
 }
 
 #fooddetails {
     position: relative;
+    background: linear-gradient(90deg, #fcff9e 0%, #c67700 100%);
+    border-style: double;
   }
 
 .detailimg {
@@ -53,6 +66,8 @@
 .name {
     top: 5%;
     right: 10px;
+    font-family: monospace;
+    font-size:xx-large;
   }
 
 .address {
@@ -67,6 +82,11 @@
 .percentage {
   top: 30%;
   right: 10px;
+}
+
+#percentage {
+  font-family: monospace;
+  font-size: x-large;
 }
 
 .button {
@@ -90,7 +110,7 @@
   flex-direction: column;
   align-items: flex-start;
   left: 550px;
-  bottom: 70px
+  bottom: 50px
   
 }
 
@@ -107,7 +127,7 @@
 
 
 
-.commentsection {
+/* .commentsection {
   position: relative;
   text-align: left;
   left: 30%;
@@ -118,7 +138,7 @@
 }
 #comments-list{
   position: relative;
-  text-align: left;
+  text-align: center;
   left: 70%;
 
 }
@@ -126,4 +146,16 @@
   position: relative;
   text-align: left;
   left: 70%;
+} */
+
+#allcomments {
+  text-align: center;
+}
+
+#allcomments h2 ul li {
+  margin-bottom: 130px;
+}
+
+#comments-list li {
+  list-style-type: none;
 }
