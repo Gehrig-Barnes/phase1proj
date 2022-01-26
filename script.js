@@ -1,3 +1,5 @@
+const baseURL = "http://localhost:3000/resturants" 
+
 function resturantData () {
     fetch("http://localhost:3000/resturants")
     .then (res => res.json())
@@ -22,10 +24,6 @@ function renderSteaks (obj) {
         const percentage = document.querySelector('#percentage')
         const commentSection = document.querySelector('#comments-list')
         commentSection.textContent = obj.comment
-        
-        
-        
- 
         name.textContent = obj.name
         img.src = obj.image
         address.innerText = obj.address
@@ -82,7 +80,6 @@ function likeAndDislikeButton(array){
     })
 }
 
-
 function submitComment (array) {
     const form = document.querySelector("form")
     const foodName =document.querySelector('.name')
@@ -95,17 +92,15 @@ function submitComment (array) {
         const newComment = `${name}: ${comment}`
         item.comment.push(newComment)
         displayComment(newComment)
+        // post(newComment)
         form.reset();
         
         }
     }
-    
-    
-        
-
 
     })
 }
+
 function displayComment(array){
     const commentSection = document.querySelector('#comments-list')
     console.log(array)
@@ -115,7 +110,14 @@ function displayComment(array){
 
 }
 
+// function post (comment){
+//     fetch("http://localhost:3000/resturants/comment"), {
+//         headers: { "Content-Type": "application/json" },
+//         method: "POST",
+//         body: JSON.stringify(comment)
+//     }
 
+// }
 
 
 resturantData();
